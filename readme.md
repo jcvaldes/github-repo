@@ -29,3 +29,26 @@ git checkout -b [rama]
 Elimino una rama
 git branch -d [rama] (editado) 
 ```
+
+# crea un repositorio local
+git init
+# chequea los nuevos cambios que tengo pero no han sido registrados
+git status
+
+## los archivos pasan al stage area para posteriorment formar parte de un snapshoot que vamos a hacer con commit
+git add . o git add -A o git add --all
+git add miarchivo.html
+git add *.png
+
+## agrego al stage todos los css que modifique
+git add css/
+
+## creo un snapshot es decir crea un respaldo historico en el tiempo
+git commit -m "Primer commit"
+luego hacer git status
+
+#revertir un desastre
+
+git checkout -- .
+o
+git reset --hard
