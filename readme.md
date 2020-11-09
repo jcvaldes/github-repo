@@ -52,3 +52,7 @@ luego hacer git status
 git checkout -- .
 o
 git reset --hard
+
+## Crear Alias
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git config --global alias.s "status -sb"
